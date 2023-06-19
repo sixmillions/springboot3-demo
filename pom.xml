@@ -56,6 +56,10 @@
             <artifactId>fastjson2</artifactId>
             <version>${fastjson.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
         <!-- jaxb -->
         <dependency>
             <groupId>javax.xml.bind</groupId>

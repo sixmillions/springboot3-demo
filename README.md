@@ -24,6 +24,10 @@ create table ts_student
 > https://mp.weixin.qq.com/s/QSlCLa01F3Hf3Seq3f6rHw  
 > https://blog.csdn.net/weixin_40461281/article/details/124971280
 
+```sql
+
+```
+
 ## QA
 
 ### 程序启动警告
@@ -42,5 +46,14 @@ com.amazonaws.util.Base64                : JAXB is unavailable. Will fallback to
 JDK9之后, JAXB-API 不在默认加载路径之中, 应该将其放到pom中
 
 > https://stackoverflow.com/questions/66920124/jaxb-warning-is-shown-while-starting-my-spring-boot-application
+
+### Stream未关闭异常
+
+Caused by: java.io.IOException: Cannot delete
+xxx\work\Tomcat\localhost\ROOT\upload_e3f261b8_a219_4707_9029_050f41bfd40d_00000000.tmp
+
+```java
+try(InputStream inputStream=file.getInputStream()){}
+```
 
 

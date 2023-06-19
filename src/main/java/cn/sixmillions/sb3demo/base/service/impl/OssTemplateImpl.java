@@ -85,7 +85,8 @@ public class OssTemplateImpl implements OssTemplate {
     @Override
     @SneakyThrows
     public void putObject(String bucketName, String objectName, InputStream stream, String contextType) {
-        putObject(bucketName, objectName, stream, stream.available(), contextType);
+        PutObjectResult putObjectResult = putObject(bucketName, objectName, stream, stream.available(), contextType);
+        //log.info("上传结果：{}", JSON.toJSONString(putObjectResult));
     }
 
     /**
