@@ -6,3 +6,9 @@ spring:
     url: jdbc:postgresql://${DB_HOST:127.0.0.1}:${DB_PORT:5432}/${DB_NAME:postgres}
     username: ${DB_USERNAME:postgres}
     password: ${DB_PASSWORD:postgres}
+
+oss:
+  endpoint: ${OSS_ENDPOINT}
+  region: ${OSS_REGION}
+  accessKey: ${OSS_ACCESSKEY}
+  secretKey: ${OSS_SECRETKEY}
